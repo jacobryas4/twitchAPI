@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: purple !important;
+}
+
+.container {
+    background-color: blue;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 15px;
+    
+}
+
+.statusContainer {
+    width: 650px;
+    height: 525px;
+    background-color: orange;
+    margin: auto;
+    border-radius: 10px;
+}
+.user {
+  background-color: grey;
+  border-radius: 5px;
+ 
+}
+.status {
+  text-align: right;
+  background-color: black;
+}
+
+.online {
+  background-color: #0DC50D !important;
+}
+
+.online:hover {
+    box-shadow: 5px 10px;
+}
