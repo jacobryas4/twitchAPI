@@ -26,6 +26,10 @@ body {
   border-radius: 5px;
  
 }
+
+.user p {
+    text-align: right;
+}
 .status {
   text-align: right;
   background-color: black;

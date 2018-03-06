@@ -19,7 +19,7 @@ function getStatus(user) {
 
   // create user ID
   var userID = "'" + user + "'";
-  console.log(userID);
+  
   
   
   $.ajax({
@@ -33,8 +33,7 @@ function getStatus(user) {
       // if online, add online class
       if(jsonData.stream !== null) {
         $("div[id=" + userID + "]").addClass("online");
-        $("div[id=" + userID + "]").append(jsonData.stream.game);
-        console.log(data);
+        $("div[id=" + userID + "] p").append(jsonData.stream.game);
       } 
     }
   });
