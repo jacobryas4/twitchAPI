@@ -32,8 +32,11 @@ function getStatus(user) {
       
       // if online, add online class
       if(jsonData.stream !== null) {
+        console.log(jsonData);
         $("div[id=" + userID + "]").addClass("online");
         $("div[id=" + userID + "] p").append(jsonData.stream.game);
+        $("div[id=" + userID + "] a").attr('href', jsonData.stream.channel.url);
+        $("div[id=" + userID + "] .user-logo img").attr('src', jsonData.stream.channel.logo);
       } 
     }
   });

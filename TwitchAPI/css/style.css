@@ -24,15 +24,27 @@ body {
 .user {
   background-color: grey;
   border-radius: 5px;
- 
+  
+  vertical-align: top;
+  
 }
 
-.user p {
-    text-align: right;
+/* .user p {
+    display: inline;
+    vertical-align: top;
+} */
+.name {
+    
 }
 .status {
-  text-align: right;
-  background-color: black;
+  
+}
+
+.user-logo img{
+    border-radius: 50%;
+    border: white 5px;
+    width: 100px;
+    float: right;
 }
 
 .online {
